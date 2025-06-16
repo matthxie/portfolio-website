@@ -77,31 +77,35 @@ export default function Page() {
         </section>
 
 
-        <section className="h-screen w-full flex items-center px-12">
-          <div className="max-w-3xl mx-auto px-4">
-              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                What I'm Doing
-              </h1>
-            <FadeInOnScroll>
+        <section className="w-full px-12 py-20">
+          <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+            What I'm Doing
+          </h1>
+          <FadeInOnScroll>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {experiences.map((proj, idx) => (
                 <ProjectCard key={idx} {...proj} />
               ))}
-            </FadeInOnScroll>
-          </div>
+            </div>
+          </div> 
+          </FadeInOnScroll>
         </section>
 
 
-        <section className="h-screen w-full flex">
-          <div className="max-w-3xl mx-auto px-4"> 
-              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                My Projects
-              </h1>
-            <FadeInOnScroll>
+        <section className="w-full px-12 py-20">
+          <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+            My Projects
+          </h1>
+          <FadeInOnScroll>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((proj, idx) => (
                 <ProjectCard key={idx} {...proj} />
               ))}
-            </FadeInOnScroll>
-          </div>
+            </div>
+          </div> 
+          </FadeInOnScroll>
         </section>
         
     </section>
