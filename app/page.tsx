@@ -62,22 +62,24 @@ export default function Page() {
         </section>
 
         
-        <section className="h-screen w-full flex items-center px-12">
+        <section className="h-[500px] w-full flex px-12">
           <div className="max-w-3xl max-w-4xl">
             <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
               About Me
             </h1>
+            <FadeInOnScroll>
             <p className="mb-4">
               {`I have an interest in deep learning and AI research and building products that
               leverage these technologies. I have research experience quantizing Protein Language Models (PLMs)
               built using Transformer architectures with LoRA and QLoRA. I'm also assisting with exploring novel
               prompting and agentic techniques that allow LLMs to solve more complex MDP reasoning problems.`}
             </p>
+            </FadeInOnScroll>
           </div>
         </section>
 
 
-        <section className="w-full px-12 py-20">
+        <section className="h-[500px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
             What I'm Doing
           </h1>
@@ -93,7 +95,7 @@ export default function Page() {
         </section>
 
 
-        <section className="w-full px-12 py-20">
+        <section className="h-[500px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
             My Projects
           </h1>
@@ -109,6 +111,5 @@ export default function Page() {
         </section>
         
     </section>
-      
   )
 }
