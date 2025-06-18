@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 interface FlipCardProps {
   title: string;
   description: string;
@@ -8,7 +6,7 @@ interface FlipCardProps {
   demoLink?: string;
 }
 
-export default function ProjectCard({
+export default function FlipCard({
   title,
   description,
   stack,

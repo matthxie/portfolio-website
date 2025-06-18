@@ -1,5 +1,6 @@
 import FadeInOnScroll from "app/components/FadeInOnScroll";
-import ProjectCard from "app/components/FlipCard";
+import FlipCard from "app/components/FlipCard";
+import ExperienceCard from "./components/ExperienceCard";
 
 
 const projects = [
@@ -26,20 +27,49 @@ const projects = [
 
 const experiences = [
   {
-    title: "Machine Vision Engineer Intern",
-    description: "Zebra Technologies",
-    stack: ["C++, C#, CNN"],
+    date: "May 2025 - Present",
+    title: "Machine Learning Intern Team Lead | Themis AI",
+    description: "Leading a team of 10 interns to develop optimal data labeling algorithms. \
+                  Using Capsa to make uncertainty-aware improvements to model training speed. \
+                  Also overseeing extension of existing open-source data labeling platforms.",
+    stack: ["PyTorch", "Python"],
     githubLink: "https://github.com/yourproject"
   },
   {
-    title: "Machine Learning Research Intern",
-    description: "Pardee Lab",
-    stack: ["PyTorch", "Python", "Reinforcement Learning"],
+    date: "Jan - Apr 2025",
+    title: "Machine Vision Engineer Intern | Zebra Technologies",
+    description: "Developing C++ and C# applications for automated quality inspection, \
+                  OCR, and object classification. Training and deploying CNN models. \
+                  Applying computer vision, 2D and 3D image processing algorithms.",
+    stack: ["C++", "C#", "CNN"],
+    githubLink: "https://github.com/yourproject"
+  },
+  {
+    date: "May 2024 - Jan 2025",
+    title: "Machine Learning Research Intern | Pardee Lab",
+    description: "ICLR 2025: Co-author on two accepted workshop papers on quantizing \
+                  Protein Language Models (PLMs) and novel peptide generation from scarce data. \
+                  Fine-tuned ProteinBERT, ESM-2, ProstT5, and ProLLaMA to predict protein function, \
+                  structure, and stability. Researched quantization techniques for LLMs, leveraging \
+                  LoRA and QLoRA fine-tuning to achieve 7:1 model compression while preserving 90% of \
+                  validation accuracy. Developed flexible PyTorch pipeline for training HuggingFace \
+                  models across generative and classification tasks. Built benchmark tool to search \
+                  hyperparameters and visualize metrics, aiding performance evaluations",
+    stack: ["PyTorch", "Python", "Transformers", "LoRA", "QLoRA"
+    ],
     githubLink: "https://github.com/yourproject",
   },
   {
-    title: "Software Developer Intern",
-    description: "Fundserv Inc",
+    date: "Jan 2023 - Apr 2023",
+    title: "Software Developer Intern | Fundserv",
+    description: "Developed Angular website in TypeScript to facilitate client access to Azure \
+                  backend through microservice APIs. Created novel accessibility testing tool for \
+                  Angular and integrated it with existing CI/CD pipeline. Conducted comprehensive \
+                  unit tests on existing codebase using Jasmine and Karma. Developed Angular \
+                  website in TypeScript to facilitate client access to Azure backend through \
+                  microservice APIs. Created novel accessibility testing tool for Angular and \
+                  integrated it with existing CI/CD pipeline. Conducted comprehensive unit tests \
+                  on existing codebase using Jasmine and Karma",
     stack: ["Angular", "TypeScript", "Java"],
     githubLink: "https://github.com/yourproject"
   },
@@ -79,15 +109,15 @@ export default function Page() {
         </section>
 
 
-        <section className="h-[600px] w-full px-12 py-20">
+        <section className="h-[950px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
             What I'm Doing
           </h1>
           <FadeInOnScroll>
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div>
               {experiences.map((proj, idx) => (
-                <ProjectCard key={idx} {...proj} />
+                <ExperienceCard key={idx} {...proj} />
               ))}
             </div>
           </div> 
@@ -103,7 +133,7 @@ export default function Page() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((proj, idx) => (
-                <ProjectCard key={idx} {...proj} />
+                <FlipCard key={idx} {...proj} />
               ))}
             </div>
           </div> 
