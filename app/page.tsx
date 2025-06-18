@@ -76,13 +76,42 @@ const experiences = [
 ];
 
 
+const extraccuriculars = [
+  {
+    date: "May 2025 - Present",
+    title: "Chief Data Officer | Fintech Startup",
+    description: "Startup that seeks to make stock trading more accessible, interpretable, and \
+                  transparent through intuitive strategy development UI/UX and automated prototyping.",
+    stack: ["AWS", "LLM", "Python", "NextJS", "C++"],
+    githubLink: "https://github.com/yourproject"
+  },
+  {
+    date: "May 2025 - Present",
+    title: "Prompting and Agentic LLM Techniques to Solve MDPs | UofT Engineering Dept.",
+    description: "Assisting ",
+    stack: ["LLM", "LangChain", "Python"],
+    githubLink: "https://github.com/yourproject"
+  },
+  {
+    date: "May 2025 - Present",
+    title: "Hyperspectral Satellite Image Denoising | UofT Aerospace Team",
+    description: "Developed novel 3D diffusion model to denoise hyperspectral satellite images.",
+    stack: ["Diffusion", "CNN", "Pytorch", "Python"],
+    githubLink: "https://github.com/yourproject"
+  },
+]
+
+
 export default function Page() {
   return (
       <section>
         <section className="h-screen w-full flex items-center px-12">
           <div className="max-w-4xl">
-            <h1 className="mb-8 text-5xl font-semibold tracking-tighter">
-              Hi! I'm Matthew
+            <p className="mb-4">
+              {`Hi, I'm`}
+            </p>
+            <h1 className="mb-8 text-7xl font-semibold tracking-tighter">
+              Matthew Xie.
             </h1>
             <p className="mb-4">
               {`I'm an undergraduate student at the University of Toronto. I'm specializing in Statistics
@@ -111,7 +140,7 @@ export default function Page() {
 
         <section className="h-[950px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-            What I'm Doing
+            Where I've Worked
           </h1>
           <FadeInOnScroll>
           <div className="max-w-6xl mx-auto">
@@ -125,9 +154,25 @@ export default function Page() {
         </section>
 
 
+        <section className="h-[950px] w-full px-12 py-20">
+          <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+            Research and Startups I'm Involved in 
+          </h1>
+          <FadeInOnScroll>
+          <div className="max-w-6xl mx-auto">
+            <div>
+              {extraccuriculars.map((proj, idx) => (
+                <ExperienceCard key={idx} {...proj} />
+              ))}
+            </div>
+          </div> 
+          </FadeInOnScroll>
+        </section>
+
+
         <section className="h-[600px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-            My Projects
+            Noteworthy Projects
           </h1>
           <FadeInOnScroll>
           <div className="max-w-6xl mx-auto">
