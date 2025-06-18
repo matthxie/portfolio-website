@@ -1,5 +1,5 @@
 import FadeInOnScroll from "app/components/FadeInOnScroll";
-import ProjectCard from "app/components/ProjectCard";
+import ProjectCard from "app/components/FlipCard";
 
 
 const projects = [
@@ -79,7 +79,7 @@ export default function Page() {
         </section>
 
 
-        <section className="h-[500px] w-full px-12 py-20">
+        <section className="h-[600px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
             What I'm Doing
           </h1>
@@ -95,7 +95,7 @@ export default function Page() {
         </section>
 
 
-        <section className="h-[500px] w-full px-12 py-20">
+        <section className="h-[600px] w-full px-12 py-20">
           <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
             My Projects
           </h1>
