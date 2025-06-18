@@ -125,7 +125,7 @@ export default function Page() {
 
         <div className="flex min-h-screen">
           {/* Left Panel */}
-          <aside className="w-1/3 sticky top-0 h-screen flex flex-col items-center justify-center p-8 bg-white dark:bg-black border-r">
+          <aside className="w-1/3 sticky top-0 h-screen flex flex-col items-center justify-start pt-12 px-8 bg-white dark:bg-black border-r">
             <h1 className="text-4xl font-bold mb-4">Matthew Xie</h1>
             <img src="/me.jpg" className="w-32 h-32 rounded-full mb-6" alt="Profile" />
             <nav className="flex flex-col gap-2 text-sm">
@@ -137,7 +137,7 @@ export default function Page() {
           </aside>
 
           {/* Right Content */}
-          <main className="w-2/3 px-12 py-20">
+          <main className="w-2/3 pt-12 px-12 py-20">
             <section className="h-[500px] w-full flex px-12">
               <div className="max-w-3xl max-w-4xl">
                 <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
