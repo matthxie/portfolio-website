@@ -15,7 +15,6 @@ export default function FlipCard({
 }: FlipCardProps) {
   return (
     <div className="relative group w-full h-64 rounded-2xl border p-4 shadow-md overflow-hidden bg-white dark:bg-neutral-900">
-      {/* Front content */}
       <div className="z-10 relative">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-sm mb-3 text-gray-500">{description}</p>
@@ -28,7 +27,6 @@ export default function FlipCard({
         </div>
       </div>
 
-      {/* Sliding overlay panel (drops down) */}
       <div
         className="absolute inset-0 bg-white dark:bg-neutral-900 z-20 px-4 py-6 px-4 py-6 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-500 ease-out group-hover:delay-100 rounded-2xl shadow-inner"
         style={{
