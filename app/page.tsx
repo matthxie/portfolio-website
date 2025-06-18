@@ -38,8 +38,8 @@ const experiences = [
   {
     date: "Jan - Apr 2025",
     title: "Machine Vision Engineer Intern | Zebra Technologies",
-    description: "Developing C++ and C# applications for automated quality inspection, \
-                  OCR, and object classification. Training and deploying CNN models. \
+    description: "Developed C++ and C# applications for automated quality inspection, \
+                  OCR, and object classification. Trained and deployed CNN models on IoT hardware. \
                   Applying computer vision, 2D and 3D image processing algorithms.",
     stack: ["C++", "C#", "CNN"],
     githubLink: "https://github.com/yourproject"
