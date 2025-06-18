@@ -148,3 +148,8 @@ table {
 .title {
   text-wrap: balance;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem
+}

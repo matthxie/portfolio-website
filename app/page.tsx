@@ -7,19 +7,14 @@ import SocialIcons from "./components/SocialIcons";
 const projects = [
   {
     title: "DQN Tetris Bot",
-    description: "Developed a DQN agent to play tetris on a custom-built classic Tetris environment",
+    description: "Developed a DQN agent to play tetris on a custom-built classic Tetris environment.",
     stack: ["PyTorch", "Python"],
     githubLink: "https://github.com/yourproject",
   },
   {
-    title: "AI Customer Service Center",
-    description: "Used ChatGPT and AWS to automatically handle customer queries.",
-    stack: ["AWS", "OpenAI", "Python", "Twilio"],
-    githubLink: "https://github.com/yourproject"
-  },
-  {
-    title: "",
-    description: "Used Twilio, AWS, and ChatGPT to automatically handle customer queries.",
+    title: "AI Customer Service Call Center",
+    description: "Used ChatGPT and AWS to automatically handle customer queries. Capable of storing \
+                  user information and interaction history to provide a smooth conversational experience.",
     stack: ["AWS", "OpenAI", "Python", "Twilio"],
     githubLink: "https://github.com/yourproject"
   },
@@ -138,7 +133,7 @@ export default function Page() {
 
           {/* Right Content */}
           <main className="w-2/3 pt-12 px-12 py-20">
-            <section className="h-[500px] w-full flex px-12">
+            <section className="h-[500px] w-full flex px-12" id="about">
               <div className="max-w-3xl max-w-4xl">
                 <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                   About Me
@@ -155,7 +150,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[1100px] w-full px-12 py-20">
+            <section className="h-[1100px] w-full px-12 py-20" id="experience">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Where I've Worked
               </h1>
@@ -171,7 +166,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[700px] w-full px-12 py-20">
+            <section className="h-[700px] w-full px-12 py-20" id="research">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Research and Startups I'm Involved in 
               </h1>
@@ -187,7 +182,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[500px] w-full px-12 py-20">
+            <section className="h-[800px] w-full px-12 py-20" id="projects">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Noteworthy Projects
               </h1>
