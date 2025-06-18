@@ -1,6 +1,7 @@
 import FadeInOnScroll from "app/components/FadeInOnScroll";
 import FlipCard from "app/components/FlipCard";
 import ExperienceCard from "./components/ExperienceCard";
+import SocialIcons from "./components/SocialIcons";
 
 
 const projects = [
@@ -117,6 +118,8 @@ export default function Page() {
               {`I'm an undergraduate student at the University of Toronto. I'm specializing in Statistics
               with focus in Machine Learning and minoring in Computer Science.`}
             </p>
+
+            <SocialIcons />
           </div>
         </section>
 
