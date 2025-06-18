@@ -123,71 +123,86 @@ export default function Page() {
           </div>
         </section>
 
-        
-        <section className="h-[500px] w-full flex px-12">
-          <div className="max-w-3xl max-w-4xl">
-            <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-              About Me
-            </h1>
-            <FadeInOnScroll>
-            <p className="mb-4">
-              {`I have an interest in deep learning and AI research and building products that
-              leverage these technologies. I have research experience quantizing Protein Language Models (PLMs)
-              built using Transformer architectures with LoRA and QLoRA. I'm also assisting with exploring novel
-              prompting and agentic techniques that allow LLMs to solve more complex MDP reasoning problems.`}
-            </p>
-            </FadeInOnScroll>
-          </div>
-        </section>
+        <div className="flex min-h-screen">
+          {/* Left Panel */}
+          <aside className="w-1/3 sticky top-0 h-screen flex flex-col items-center justify-center p-8 bg-white dark:bg-black border-r">
+            <h1 className="text-4xl font-bold mb-4">Matthew Xie</h1>
+            <img src="/me.jpg" className="w-32 h-32 rounded-full mb-6" alt="Profile" />
+            <nav className="flex flex-col gap-2 text-sm">
+              <a href="#about">About</a>
+              <a href="#experience">Experience</a>
+              <a href="#research">Research</a>
+              <a href="#projects">Projects</a>
+            </nav>
+          </aside>
+
+          {/* Right Content */}
+          <main className="w-2/3 px-12 py-20">
+            <section className="h-[500px] w-full flex px-12">
+              <div className="max-w-3xl max-w-4xl">
+                <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+                  About Me
+                </h1>
+                <FadeInOnScroll>
+                <p className="mb-4">
+                  {`I have an interest in deep learning and AI research and building products that
+                  leverage these technologies. I have research experience quantizing Protein Language Models (PLMs)
+                  built using Transformer architectures with LoRA and QLoRA. I'm also assisting with exploring novel
+                  prompting and agentic techniques that allow LLMs to solve more complex MDP reasoning problems.`}
+                </p>
+                </FadeInOnScroll>
+              </div>
+            </section>
 
 
-        <section className="h-[950px] w-full px-12 py-20">
-          <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-            Where I've Worked
-          </h1>
-          <FadeInOnScroll>
-          <div className="max-w-6xl mx-auto">
-            <div>
-              {experiences.map((proj, idx) => (
-                <ExperienceCard key={idx} {...proj} />
-              ))}
-            </div>
-          </div> 
-          </FadeInOnScroll>
-        </section>
+            <section className="h-[1100px] w-full px-12 py-20">
+              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+                Where I've Worked
+              </h1>
+              <FadeInOnScroll>
+              <div className="max-w-6xl mx-auto">
+                <div>
+                  {experiences.map((proj, idx) => (
+                    <ExperienceCard key={idx} {...proj} />
+                  ))}
+                </div>
+              </div> 
+              </FadeInOnScroll>
+            </section>
 
 
-        <section className="h-[950px] w-full px-12 py-20">
-          <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-            Research and Startups I'm Involved in 
-          </h1>
-          <FadeInOnScroll>
-          <div className="max-w-6xl mx-auto">
-            <div>
-              {extraccuriculars.map((proj, idx) => (
-                <ExperienceCard key={idx} {...proj} />
-              ))}
-            </div>
-          </div> 
-          </FadeInOnScroll>
-        </section>
+            <section className="h-[700px] w-full px-12 py-20">
+              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+                Research and Startups I'm Involved in 
+              </h1>
+              <FadeInOnScroll>
+              <div className="max-w-6xl mx-auto">
+                <div>
+                  {extraccuriculars.map((proj, idx) => (
+                    <ExperienceCard key={idx} {...proj} />
+                  ))}
+                </div>
+              </div> 
+              </FadeInOnScroll>
+            </section>
 
 
-        <section className="h-[600px] w-full px-12 py-20">
-          <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-            Noteworthy Projects
-          </h1>
-          <FadeInOnScroll>
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.map((proj, idx) => (
-                <FlipCard key={idx} {...proj} />
-              ))}
-            </div>
-          </div> 
-          </FadeInOnScroll>
-        </section>
-        
+            <section className="h-[500px] w-full px-12 py-20">
+              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+                Noteworthy Projects
+              </h1>
+              <FadeInOnScroll>
+              <div className="max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {projects.map((proj, idx) => (
+                    <FlipCard key={idx} {...proj} />
+                  ))}
+                </div>
+              </div> 
+              </FadeInOnScroll>
+            </section>
+          </main>
+        </div>
     </section>
   )
 }
