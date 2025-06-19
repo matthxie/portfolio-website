@@ -98,6 +98,34 @@ const extraccuriculars = [
 ]
 
 
+const publications = [
+  {
+    date: "April 2025",
+    title: "Assessing Quantization and Efficient Fine-Tuning for Protein Language Models \
+            | ICLR 2025 Workshop",
+    description: "OpenReview: https://openreview.net/forum?id=KBMxaCSwpB",
+    stack: [],
+    githubLink: ""
+  },
+  {
+    date: "April 2025",
+    title: "From Minimal Data To Maximal Insight: A Machine Learning Guided Platform For \
+            Peptide Discovery | ICLR 2025 Workshop",
+    description: "OpenReview: https://openreview.net/forum?id=sfTXIiu7Op",
+    stack: [],
+    githubLink: ""
+  },
+  {
+    date: "August 2024",
+    title: "Beyond the Visible: Jointly Attending to Spectral and Spatial Dimensions with \
+            HSI-Diffusion for the FINCH Spacecraft | 38th Annual Small Satellite Conference",
+    description: "DOI: 10.48550/arXiv.2406.10724",
+    stack: [],
+    githubLink: ""
+  },
+]
+
+
 export default function Page() {
   return (
       <section>
@@ -174,6 +202,22 @@ export default function Page() {
               <div className="max-w-6xl mx-auto">
                 <div>
                   {extraccuriculars.map((proj, idx) => (
+                    <ExperienceCard key={idx} {...proj} />
+                  ))}
+                </div>
+              </div> 
+              </FadeInOnScroll>
+            </section>
+
+
+            <section className="h-[700px] w-full px-12 py-20" id="research">
+              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+                Publications
+              </h1>
+              <FadeInOnScroll>
+              <div className="max-w-6xl mx-auto">
+                <div>
+                  {publications.map((proj, idx) => (
                     <ExperienceCard key={idx} {...proj} />
                   ))}
                 </div>
