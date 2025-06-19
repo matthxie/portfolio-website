@@ -36,7 +36,7 @@ const experiences = [
     title: "Machine Vision Engineer Intern | Zebra Technologies",
     description: "Developed C++ and C# applications for automated quality inspection, \
                   OCR, and object classification. Trained and deployed CNN models on IoT hardware. \
-                  Applying computer vision, 2D and 3D image processing algorithms.",
+                  Applied computer vision, 2D and 3D image processing algorithms.",
     stack: ["C++", "C#", "CNN"],
     githubLink: "https://github.com/yourproject"
   },
@@ -182,7 +182,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[800px] w-full px-12 py-20" id="projects">
+            <section className="h-[750px] w-full px-12 py-20" id="projects">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Noteworthy Projects
               </h1>
