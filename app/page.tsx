@@ -2,6 +2,7 @@ import FadeInOnScroll from "app/components/FadeInOnScroll";
 import FlipCard from "app/components/FlipCard";
 import ExperienceCard from "./components/ExperienceCard";
 import SocialIcons from "./components/SocialIcons";
+import SidePanel from "./components/SidePanel";
 
 
 const projects = [
@@ -148,20 +149,11 @@ export default function Page() {
 
         <div className="flex min-h-screen">
           {/* Left Panel */}
-          <aside className="w-1/3 sticky top-0 h-screen flex flex-col items-center justify-start pt-12 px-8 bg-white dark:bg-black border-r">
-            <h1 className="text-4xl font-bold mb-4">Matthew Xie</h1>
-            <img src="/me.jpg" className="w-32 h-32 rounded-full mb-6" alt="Profile" />
-            <nav className="flex flex-col gap-2 text-sm">
-              <a href="#about">About</a>
-              <a href="#experience">Experience</a>
-              <a href="#research">Research</a>
-              <a href="#projects">Projects</a>
-            </nav>
-          </aside>
+          <SidePanel />
 
           {/* Right Content */}
           <main className="w-2/3 pt-12 px-12 py-20">
-            <section className="h-[500px] w-full flex px-12" id="about">
+            <section id="about" className="h-[500px] w-full flex px-12">
               <div className="max-w-3xl max-w-4xl">
                 <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                   About Me
@@ -178,7 +170,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[1100px] w-full px-12 py-20" id="experience">
+            <section id="experience" className="h-[1100px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Where I've Worked
               </h1>
@@ -194,7 +186,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[700px] w-full px-12 py-20" id="research">
+            <section id="research" className="h-[700px] w-full px-12 py-20" >
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Research and Startups I'm Involved in 
               </h1>
@@ -210,7 +202,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[700px] w-full px-12 py-20" id="research">
+            <section id="publications" className="h-[700px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Publications
               </h1>
@@ -226,7 +218,7 @@ export default function Page() {
             </section>
 
 
-            <section className="h-[750px] w-full px-12 py-20" id="projects">
+            <section id="projects" className="h-[750px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Noteworthy Projects
               </h1>
