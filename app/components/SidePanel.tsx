@@ -36,7 +36,7 @@ export default function SidePanel() {
             ))}
             </nav>
 
-            <div className="mt-auto pt-12">
+            <div className="pt-12">
                 <SocialIcons />
             </div>
             </aside>
