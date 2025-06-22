@@ -84,9 +84,10 @@ const extraccuriculars = [
   },
   {
     date: "May 2025 - Present",
-    title: "Prompting and Agentic LLM Techniques to Solve MDPs | UofT Engineering Dept.",
-    description: "Assisting ",
-    stack: ["LLM", "LangChain", "Python"],
+    title: "Agentic LLM Pipeline to Solve MDPs | UofT Engineering Dept.",
+    description: "Assisting with developing and testing LLM prompting techniques such as chain-of-thoguht, \
+                  RAG, and self-correction. ",
+    stack: ["LLM", "LangChain", "LlamaIndex", "Python"],
     githubLink: "https://github.com/yourproject"
   },
   {
