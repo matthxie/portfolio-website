@@ -14,11 +14,11 @@ export default function SidePanel() {
     return (
         <aside className="w-1/3 sticky top-0 h-screen flex flex-col items-center justify-start pt-12 px-8 bg-white dark:bg-black border-r">
             <h1 className="text-4xl font-bold mb-4">Matthew Xie</h1>
-            <img
-                src="/app/media/IMG_2645.png"
-                className="w-32 h-32 rounded-full mb-6"
+            {/* <img
+                src={"/media/IMG_2645.png"}
+                className="w-30 h-32 rounded-full mb-6"
                 alt="Profile"
-            />
+            /> */}
 
             <nav className="flex flex-col gap-2 text-sm items-center w-full">
             {sections.map((id) => (
@@ -39,6 +39,6 @@ export default function SidePanel() {
             <div className="pt-12">
                 <SocialIcons />
             </div>
-            </aside>
+        </aside>
     )
 }
