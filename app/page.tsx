@@ -25,8 +25,8 @@ const projects = [
 const experiences = [
   {
     date: "May 2025 - Present",
-    title: "Machine Learning Intern Team Lead | Themis AI",
-    description: "Leading a team of 10 interns to develop optimal data labeling algorithms. \
+    title: "Machine Learning Team Lead | Themis AI",
+    description: "Leading a team of 8 to develop optimal data labeling algorithms. \
                   Using Capsa to make uncertainty-aware improvements to model training speed. \
                   Also overseeing extension of existing open-source data labeling platforms.",
     stack: ["PyTorch", "Python"],
@@ -75,7 +75,7 @@ const experiences = [
 
 const extraccuriculars = [
   {
-    date: "May 2025 - Present",
+    date: "April 2025 - Present",
     title: "Chief Data Officer | Fintech Startup",
     description: "Startup that seeks to make stock trading more accessible, interpretable, and \
                   transparent through intuitive strategy development UI/UX and automated prototyping.",
@@ -83,7 +83,7 @@ const extraccuriculars = [
     githubLink: "https://github.com/yourproject"
   },
   {
-    date: "May 2025 - Present",
+    date: "June 2024 - Present",
     title: "Agentic LLM Pipeline to Solve MDPs | UofT Engineering Dept.",
     description: "Assisting with developing and testing LLM prompting techniques such as chain-of-thoguht, \
                   RAG, and self-correction. ",
@@ -91,7 +91,7 @@ const extraccuriculars = [
     githubLink: "https://github.com/yourproject"
   },
   {
-    date: "May 2025 - Present",
+    date: "September 2023 - September 2024",
     title: "Hyperspectral Satellite Image Denoising | UofT Aerospace Team",
     description: "Developed novel 3D diffusion model to denoise hyperspectral satellite images.",
     stack: ["Diffusion", "CNN", "Pytorch", "Python"],

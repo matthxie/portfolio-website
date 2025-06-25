@@ -20,7 +20,7 @@ export default function SidePanel() {
                 alt="Profile"
             /> */}
 
-            <nav className="flex flex-col gap-2 text-sm items-center w-full">
+            <nav className="flex flex-col gap-2 pt-20 text-sm items-center w-full">
             {sections.map((id) => (
                 <a
                 key={id}
@@ -36,7 +36,7 @@ export default function SidePanel() {
             ))}
             </nav>
 
-            <div className="pt-12">
+            <div className="pt-40">
                 <SocialIcons />
             </div>
         </aside>
