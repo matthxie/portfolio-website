@@ -2,9 +2,9 @@ import { SiGithub, SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
 
 
-export default function SocialIcons() {
+export default function SocialIcons({ className = '' }: { className?: string }) {
   return (
-    <div className="flex gap-4 mt-6">
+    <div className={`flex items-center gap-4 ${className}`}>
       <a
         href="https://github.com/matthxie"
         target="_blank"

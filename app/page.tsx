@@ -186,11 +186,9 @@ export default function Page() {
         </section>
 
         <div className="flex min-h-screen">
-          {/* Left Panel */}
           <SidePanel />
 
-          {/* Right Content */}
-          <main className="w-2/3 pt-32 px-12 py-20">
+          <main className="flex-1 min-w-0 px-4 sm:px-8 lg:px-12 py-16">
             <section id="experience" className="min-h-[1700px] w-full px-12 pb-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Experience
