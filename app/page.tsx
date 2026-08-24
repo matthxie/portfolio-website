@@ -7,7 +7,7 @@ import SidePanel from "./components/SidePanel";
 
 const projects = [
   {
-    title: "Ceb – Persistent Queryable Memory for AI",
+    title: "Loregraph – Personal Second Brain",
     description: "Local-first bi-temporal knowledge graph engine that retains superseded facts with \
                   validity windows for point-in-time queries. Replaced per-hop LLM graph traversal with \
                   personalized PageRank diffusion over a temporally-filtered subgraph, cutting query cost \
@@ -35,7 +35,8 @@ const projects = [
 const experiences = [
   {
     date: "Nov 2025 - Present",
-    title: "Founding Machine Learning Engineer | Uma",
+    title: "Founding Machine Learning Engineer",
+    company: "Uma",
     description: "Architected an AWS data lake on Apache Iceberg, Athena, and Kinesis Firehose to ingest \
                   and query per-frame CV telemetry across a 19-machine fleet at 5.4M frames/week. Designed \
                   a self-correcting MLOps pipeline that runs weekly diagnostics via embedding drift detection, \
@@ -49,7 +50,8 @@ const experiences = [
   },
   {
     date: "May 2025 - Oct 2025",
-    title: "Machine Learning Engineer Intern | Themis AI",
+    title: "Machine Learning Engineer Intern",
+    company: "Themis AI",
     description: "Built end-to-end active learning pipelines in PyTorch that reached 90% of baseline accuracy \
                   using 5% of the original training data through uncertainty-based sampling. Enhanced \
                   feature-space sampling by replacing PCA+clustering with ResNet-18 embeddings for 2.5x greater \
@@ -60,7 +62,8 @@ const experiences = [
   },
   {
     date: "Jan 2025 - Apr 2025",
-    title: "Machine Vision Engineer Intern | Zebra Technologies",
+    title: "Machine Vision Engineer Intern",
+    company: "Zebra Technologies",
     description: "Deployed C++ CNN applications for real-time object sorting, OCR, and anomaly detection on \
                   IoT hardware. Rewrote the C++ codebase with scheduling and parallel operations for a 6x \
                   speedup to real-time image processing. Implemented 2D and 3D computer vision algorithms such \
@@ -70,7 +73,8 @@ const experiences = [
   },
   {
     date: "May 2024 - Jan 2025",
-    title: "Machine Learning Research Intern | Pardee Lab",
+    title: "Machine Learning Research Intern",
+    company: "Pardee Lab",
     description: "ICLR 2025: Co-author on two accepted workshop papers on quantizing \
                   Protein Language Models (PLMs) and novel peptide generation from scarce data. \
                   Fine-tuned ProteinBERT, ESM-2, ProstT5, and ProLLaMA to predict protein function, \
@@ -85,7 +89,8 @@ const experiences = [
   },
   {
     date: "Jan 2023 - Apr 2023",
-    title: "Software Developer Intern | Fundserv",
+    title: "Software Developer Intern",
+    company: "Fundserv",
     description: "Developed Angular website in TypeScript to facilitate client access to Azure \
                   backend through microservice APIs. Created novel accessibility testing tool for \
                   Angular and integrated it with existing CI/CD pipeline. Conducted comprehensive \
@@ -103,7 +108,8 @@ const experiences = [
 const extraccuriculars = [
   {
     date: "April 2025 - Present",
-    title: "Chief Data Officer | Fintech Startup",
+    title: "Chief Data Officer",
+    company: "Fintech Startup",
     description: "Startup that seeks to make stock trading more accessible, interpretable, and \
                   transparent through intuitive strategy development UI/UX and automated prototyping.",
     stack: ["AWS", "LLM", "Python", "NextJS", "C++"],
@@ -111,7 +117,8 @@ const extraccuriculars = [
   },
   {
     date: "June 2024 - May 2025",
-    title: "Agentic LLM Pipeline to Solve MDPs | UofT Engineering Dept.",
+    title: "Agentic LLM Pipeline to Solve MDPs",
+    company: "UofT Engineering Dept.",
     description: "Researched prompting and agentic methods for LLMs to solve dynamic reasoning problems by \
                   formulating Markov Decision Processes and generating code solutions. Designed a \
                   chain-of-thought pipeline with LangChain that improved MDP formulation accuracy by 60%, and \
@@ -122,7 +129,8 @@ const extraccuriculars = [
   },
   {
     date: "September 2023 - September 2024",
-    title: "Hyperspectral Satellite Image Denoising | UofT Aerospace Team",
+    title: "Hyperspectral Satellite Image Denoising",
+    company: "UofT Aerospace Team",
     description: "Developed novel 3D diffusion model to denoise hyperspectral satellite images.",
     stack: ["Diffusion", "CNN", "Pytorch", "Python"],
     githubLink: "https://github.com/yourproject"
@@ -133,8 +141,8 @@ const extraccuriculars = [
 const publications = [
   {
     date: "April 2025",
-    title: "Assessing Quantization and Efficient Fine-Tuning for Protein Language Models \
-            | ICLR 2025 Workshop",
+    title: "Assessing Quantization and Efficient Fine-Tuning for Protein Language Models",
+    company: "ICLR 2025 Workshop",
     description: "OpenReview: https://openreview.net/forum?id=KBMxaCSwpB",
     stack: [],
     githubLink: ""
@@ -142,7 +150,8 @@ const publications = [
   {
     date: "April 2025",
     title: "From Minimal Data To Maximal Insight: A Machine Learning Guided Platform For \
-            Peptide Discovery | ICLR 2025 Workshop",
+            Peptide Discovery",
+    company: "ICLR 2025 Workshop",
     description: "OpenReview: https://openreview.net/forum?id=sfTXIiu7Op",
     stack: [],
     githubLink: ""
@@ -150,7 +159,8 @@ const publications = [
   {
     date: "August 2024",
     title: "Beyond the Visible: Jointly Attending to Spectral and Spatial Dimensions with \
-            HSI-Diffusion for the FINCH Spacecraft | 38th Annual Small Satellite Conference",
+            HSI-Diffusion for the FINCH Spacecraft",
+    company: "38th Annual Small Satellite Conference",
     description: "DOI: 10.48550/arXiv.2406.10724",
     stack: [],
     githubLink: ""
@@ -190,7 +200,7 @@ export default function Page() {
               </h1>
               <FadeInOnScroll>
               <div className="max-w-6xl mx-auto">
-                <div>
+                <div className="space-y-6">
                   {experiences.map((proj, idx) => (
                     <ExperienceCard key={idx} {...proj} />
                   ))}
@@ -206,7 +216,7 @@ export default function Page() {
               </h1>
               <FadeInOnScroll>
               <div className="max-w-6xl mx-auto">
-                <div>
+                <div className="space-y-6">
                   {extraccuriculars.map((proj, idx) => (
                     <ExperienceCard key={idx} {...proj} />
                   ))}
@@ -222,7 +232,7 @@ export default function Page() {
               </h1>
               <FadeInOnScroll>
               <div className="max-w-6xl mx-auto">
-                <div>
+                <div className="space-y-6">
                   {publications.map((proj, idx) => (
                     <ExperienceCard key={idx} {...proj} />
                   ))}
