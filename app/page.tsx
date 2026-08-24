@@ -30,6 +30,12 @@ const projects = [
     stack: ["AWS", "OpenAI", "Python", "Twilio"],
     githubLink: "https://github.com/yourproject"
   },
+  {
+    title: "Hyperspectral Satellite Image Denoising",
+    description: "Co-developed a novel 3D diffusion model to denoise hyperspectral satellite images.",
+    stack: ["Diffusion", "CNN", "Pytorch", "Python"],
+    githubLink: "https://github.com/yourproject"
+  },
 ];
 
 
@@ -119,30 +125,6 @@ const experiences = [
 ];
 
 
-const extraccuriculars = [
-  {
-    date: "June 2024 - May 2025",
-    title: "Agentic LLM Pipeline to Solve MDPs",
-    company: "UofT Engineering Dept.",
-    description: "Researched prompting and agentic methods for LLMs to solve dynamic reasoning problems by \
-                  formulating Markov Decision Processes and generating code solutions. Designed a \
-                  chain-of-thought pipeline with LangChain that improved MDP formulation accuracy by 60%, and \
-                  constructed RAG pipelines with LlamaIndex to extract 5000 datapoints from PDF textbooks \
-                  across GPT-4o, DeepSeek-R1, and Llama 3.3-70B.",
-    stack: ["LLM", "LangChain", "LlamaIndex", "Python"],
-    githubLink: "https://github.com/yourproject"
-  },
-  {
-    date: "September 2023 - September 2024",
-    title: "Hyperspectral Satellite Image Denoising",
-    company: "UofT Aerospace Team",
-    description: "Developed novel 3D diffusion model to denoise hyperspectral satellite images.",
-    stack: ["Diffusion", "CNN", "Pytorch", "Python"],
-    githubLink: "https://github.com/yourproject"
-  },
-]
-
-
 const publications = [
   {
     date: "April 2025",
@@ -215,15 +197,15 @@ export default function Page() {
             </section>
 
 
-            <section id="research" className="min-h-[800px] w-full px-12 py-20" >
+            <section id="projects" className="min-h-[670px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                Research and Startups I'm Involved in 
+                Projects
               </h1>
               <FadeInOnScroll>
               <div className="max-w-6xl mx-auto">
                 <div className="space-y-6">
-                  {extraccuriculars.map((proj, idx) => (
-                    <ExperienceCard key={idx} {...proj} />
+                  {projects.map((proj, idx) => (
+                    <ProjectCard key={idx} {...proj} />
                   ))}
                 </div>
               </div> 
@@ -246,21 +228,6 @@ export default function Page() {
               </FadeInOnScroll>
             </section>
 
-
-            <section id="projects" className="min-h-[670px] w-full px-12 py-20">
-              <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                Projects
-              </h1>
-              <FadeInOnScroll>
-              <div className="max-w-6xl mx-auto">
-                <div className="space-y-6">
-                  {projects.map((proj, idx) => (
-                    <ProjectCard key={idx} {...proj} />
-                  ))}
-                </div>
-              </div> 
-              </FadeInOnScroll>
-            </section>
           </main>
         </div>
     </section>
