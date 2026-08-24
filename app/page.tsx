@@ -3,11 +3,12 @@ import FlipCard from "app/components/FlipCard";
 import ExperienceCard from "./components/ExperienceCard";
 import SocialIcons from "./components/SocialIcons";
 import SidePanel from "./components/SidePanel";
+import ProjectCard from "./components/ProjectCard";
 
 
 const projects = [
   {
-    title: "Loregraph – Personal Second Brain",
+    title: "Loregraph",
     description: "Local-first bi-temporal knowledge graph engine that retains superseded facts with \
                   validity windows for point-in-time queries. Replaced per-hop LLM graph traversal with \
                   personalized PageRank diffusion over a temporally-filtered subgraph, cutting query cost \
@@ -248,13 +249,13 @@ export default function Page() {
 
             <section id="projects" className="min-h-[670px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                Noteworthy Projects
+                Projects
               </h1>
               <FadeInOnScroll>
               <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="space-y-6">
                   {projects.map((proj, idx) => (
-                    <FlipCard key={idx} {...proj} />
+                    <ProjectCard key={idx} {...proj} />
                   ))}
                 </div>
               </div> 
