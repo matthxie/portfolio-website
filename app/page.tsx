@@ -114,11 +114,7 @@ const experiences = [
     description: "Developed Angular website in TypeScript to facilitate client access to Azure \
                   backend through microservice APIs. Created novel accessibility testing tool for \
                   Angular and integrated it with existing CI/CD pipeline. Conducted comprehensive \
-                  unit tests on existing codebase using Jasmine and Karma. Developed Angular \
-                  website in TypeScript to facilitate client access to Azure backend through \
-                  microservice APIs. Created novel accessibility testing tool for Angular and \
-                  integrated it with existing CI/CD pipeline. Conducted comprehensive unit tests \
-                  on existing codebase using Jasmine and Karma",
+                  unit tests on existing codebase using Jasmine and Karma.",
     stack: ["Angular", "TypeScript", "Java"],
     githubLink: "https://github.com/yourproject"
   },
