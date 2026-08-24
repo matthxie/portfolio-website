@@ -72,6 +72,19 @@ const experiences = [
     githubLink: "https://github.com/yourproject"
   },
   {
+    date: "Jun 2024 - May 2025",
+    title: "Undergrad Research",
+    company: "University of Toronto",
+    description: "Researched prompting and agentic methods for LLMs to solve dynamic reasoning problems by \
+                  formulating Markov Decision Processes and generating code solutions. Designed a \
+                  chain-of-thought pipeline with LangChain that improved MDP formulation accuracy by 60%, and \
+                  constructed RAG pipelines with LlamaIndex to extract 5000 datapoints from PDF textbooks; \
+                  contributed to evaluation and prompt engineering for an agentic pipeline across GPT-4o, \
+                  DeepSeek-R1, and Llama 3.3-70B.",
+    stack: ["LLM", "LangChain", "LlamaIndex", "Python"],
+    githubLink: "https://github.com/yourproject"
+  },
+  {
     date: "May 2024 - Jan 2025",
     title: "Machine Learning Research Intern",
     company: "Pardee Lab",
