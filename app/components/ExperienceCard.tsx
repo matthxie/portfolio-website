@@ -31,7 +31,9 @@ export default function ExperienceCard({
           <p className="text-base text-gray-500 dark:text-gray-400 leading-snug">{date}</p>
         </div>
 
-        <p className="text-base text-gray-600 dark:text-gray-400">{description}</p>
+        {description && (
+          <p className="text-base text-gray-600 dark:text-gray-400">{description}</p>
+        )}
 
         {links && links.length > 0 && (
           <div className="flex flex-col gap-1.5 mt-1">

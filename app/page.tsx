@@ -17,7 +17,7 @@ const projects = [
                   with embedding and extraction (BGE-small, GLiNER, YAKE) running fully on-device.",
     stack: ["Python", "PyTorch", "Electron", "SQLite", "MCP"],
     links: [
-      { label: "GitHub", url: "https://github.com/yourproject" },
+      { label: "GitHub", url: "https://github.com/matthxie/loregraph" },
     ],
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     description: "Developed a DQN agent to play tetris on a custom-built classic Tetris environment.",
     stack: ["PyTorch", "Python"],
     links: [
-      { label: "GitHub", url: "https://github.com/yourproject" },
+      { label: "GitHub", url: "https://github.com/matthxie/Tetris-bot" },
     ],
   },
   {
@@ -34,7 +34,7 @@ const projects = [
                   user information and interaction history to provide a smooth conversational experience.",
     stack: ["AWS", "OpenAI", "Python", "Twilio"],
     links: [
-      { label: "GitHub", url: "https://github.com/yourproject" },
+      { label: "GitHub", url: "https://github.com/matthxie/AI-Customer-Service-Call" },
     ],
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     description: "Co-developed a novel 3D diffusion model to denoise hyperspectral satellite images.",
     stack: ["Diffusion", "CNN", "Pytorch", "Python"],
     links: [
-      { label: "GitHub", url: "https://github.com/yourproject" },
+      { label: "GitHub", url: "https://github.com/utat-ss/FINCH-destriping" },
     ],
   },
 ];
@@ -129,24 +129,33 @@ const publications = [
     date: "April 2025",
     title: "Assessing Quantization and Efficient Fine-Tuning for Protein Language Models",
     company: "ICLR 2025 Workshop",
-    description: "OpenReview: https://openreview.net/forum?id=KBMxaCSwpB",
+    description: "",
     stack: [],
+    links: [
+      { label: "OpenReview", url: "https://openreview.net/forum?id=KBMxaCSwpB" },
+    ],
   },
   {
     date: "April 2025",
     title: "From Minimal Data To Maximal Insight: A Machine Learning Guided Platform For \
             Peptide Discovery",
     company: "ICLR 2025 Workshop",
-    description: "OpenReview: https://openreview.net/forum?id=sfTXIiu7Op",
+    description: "",
     stack: [],
+    links: [
+      { label: "OpenReview", url: "https://openreview.net/forum?id=sfTXIiu7Op" },
+    ],
   },
   {
     date: "August 2024",
     title: "Beyond the Visible: Jointly Attending to Spectral and Spatial Dimensions with \
             HSI-Diffusion for the FINCH Spacecraft",
     company: "38th Annual Small Satellite Conference",
-    description: "DOI: 10.48550/arXiv.2406.10724",
+    description: "",
     stack: [],
+    links: [
+      { label: "DOI: 10.48550/arXiv.2406.10724", url: "https://doi.org/10.48550/arXiv.2406.10724" },
+    ],
   },
 ]
 
