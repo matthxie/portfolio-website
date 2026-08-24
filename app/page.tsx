@@ -107,15 +107,6 @@ const experiences = [
 
 const extraccuriculars = [
   {
-    date: "April 2025 - Present",
-    title: "Chief Data Officer",
-    company: "Fintech Startup",
-    description: "Startup that seeks to make stock trading more accessible, interpretable, and \
-                  transparent through intuitive strategy development UI/UX and automated prototyping.",
-    stack: ["AWS", "LLM", "Python", "NextJS", "C++"],
-    githubLink: "https://github.com/yourproject"
-  },
-  {
     date: "June 2024 - May 2025",
     title: "Agentic LLM Pipeline to Solve MDPs",
     company: "UofT Engineering Dept.",
