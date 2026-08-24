@@ -5,10 +5,8 @@ import SocialIcons from './SocialIcons'
 
 
 export default function SidePanel() {
-    const sections = ['about', 'experience', 'research', 'publications', 'projects']
+    const sections = ['experience', 'research', 'publications', 'projects']
     const activeSection = useActiveSection(sections)
-
-    console.log('Current active section:', activeSection)
 
 
     return (

@@ -4,34 +4,47 @@ import { useEffect, useState } from 'react'
 
 export function useActiveSection(sectionIds: string[]) {
     const [active, setActive] = useState('')
+    const key = sectionIds.join(',')
 
     useEffect(() => {
-    const observer = new IntersectionObserver(
-        (entries) => {
-        for (const entry of entries) {
-            console.log('Entry:', entry);
-            if (entry.isIntersecting) {
-                console.log('Active section is now:', entry.target.id)
-                setActive(entry.target.id)
-                break
+        const ids = key.split(',')
+        let frame = 0
+
+        const update = () => {
+            frame = 0
+            const line = window.innerHeight / 3
+            let current = ''
+
+            for (const id of ids) {
+                const el = document.getElementById(id)
+                if (!el) continue
+
+                const { top, bottom } = el.getBoundingClientRect()
+                if (top <= line && bottom > line) {
+                    current = id
+                    break
+                }
+                if (top <= line) current = id
             }
+
+            setActive(current)
         }
-        },
-        {
-        rootMargin: '-20% 0px -20% 0px',
-        threshold: 0.3,
+
+        const onScroll = () => {
+            if (frame) return
+            frame = requestAnimationFrame(update)
         }
-    )
 
-    sectionIds.forEach((id) => {
-        console.log('observing section:', id)
+        update()
+        window.addEventListener('scroll', onScroll, { passive: true })
+        window.addEventListener('resize', onScroll)
 
-        const el = document.getElementById(id)
-        if (el) observer.observe(el)
-    })
+        return () => {
+            if (frame) cancelAnimationFrame(frame)
+            window.removeEventListener('scroll', onScroll)
+            window.removeEventListener('resize', onScroll)
+        }
+    }, [key])
 
-        return () => observer.disconnect()
-  }, [sectionIds])
-
-  return active
+    return active
 }

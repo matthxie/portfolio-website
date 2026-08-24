@@ -184,24 +184,7 @@ export default function Page() {
 
           {/* Right Content */}
           <main className="w-2/3 pt-32 px-12 py-20">
-            <section id="about" className="h-[500px] w-full flex px-12">
-              <div className="max-w-3xl max-w-4xl">
-                <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                  About Me
-                </h1>
-                <FadeInOnScroll>
-                <p className="mb-4">
-                  {`I have an interest in deep learning and AI research and building products that
-                  leverage these technologies. I have research experience quantizing Protein Language Models (PLMs)
-                  built using Transformer architectures with LoRA and QLoRA. I'm also assisting with exploring novel
-                  prompting and agentic techniques that allow LLMs to solve more complex MDP reasoning problems.`}
-                </p>
-                </FadeInOnScroll>
-              </div>
-            </section>
-
-
-            <section id="experience" className="h-[1700px] w-full px-12 py-20">
+            <section id="experience" className="h-[1700px] w-full px-12 pb-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Experience
               </h1>
