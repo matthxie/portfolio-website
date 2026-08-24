@@ -7,6 +7,16 @@ import SidePanel from "./components/SidePanel";
 
 const projects = [
   {
+    title: "Ceb – Persistent Queryable Memory for AI",
+    description: "Local-first bi-temporal knowledge graph engine that retains superseded facts with \
+                  validity windows for point-in-time queries. Replaced per-hop LLM graph traversal with \
+                  personalized PageRank diffusion over a temporally-filtered subgraph, cutting query cost \
+                  to $0.001-0.005. Scores 86% on LongMemEval-S and ships as an MCP server for Claude Code, \
+                  with embedding and extraction (BGE-small, GLiNER, YAKE) running fully on-device.",
+    stack: ["Python", "PyTorch", "Electron", "SQLite", "MCP"],
+    githubLink: "https://github.com/yourproject",
+  },
+  {
     title: "DQN Tetris Bot",
     description: "Developed a DQN agent to play tetris on a custom-built classic Tetris environment.",
     stack: ["PyTorch", "Python"],
@@ -24,21 +34,38 @@ const projects = [
 
 const experiences = [
   {
-    date: "May 2025 - Present",
-    title: "Machine Learning Team Lead | Themis AI",
-    description: "Leading a team of 8 to develop optimal data labeling algorithms. \
-                  Using Capsa to make uncertainty-aware improvements to model training speed. \
-                  Also overseeing extension of existing open-source data labeling platforms.",
-    stack: ["PyTorch", "Python"],
+    date: "Nov 2025 - Present",
+    title: "Founding Machine Learning Engineer | Uma",
+    description: "Architected an AWS data lake on Apache Iceberg, Athena, and Kinesis Firehose to ingest \
+                  and query per-frame CV telemetry across a 19-machine fleet at 5.4M frames/week. Designed \
+                  a self-correcting MLOps pipeline that runs weekly diagnostics via embedding drift detection, \
+                  confidence monitoring, and label mismatch analysis, classifies root cause, and triggers \
+                  targeted finetuning on RunPod Serverless with automated backtesting and rollback. Built the \
+                  entire production CV stack for real-time retail product tracking, spanning detection, edge \
+                  inference, and a zero-shot auto-labeling pipeline (MediaPipe, YOLO-World, SAM2.1, Kalman \
+                  filtering, BoT-SORT) at 95%+ box accuracy and a 7 hour train-to-production cycle.",
+    stack: ["AWS", "PyTorch", "Iceberg", "YOLO", "SAM2", "Docker"],
     githubLink: "https://github.com/yourproject"
   },
   {
-    date: "Jan - Apr 2025",
+    date: "May 2025 - Oct 2025",
+    title: "Machine Learning Engineer Intern | Themis AI",
+    description: "Built end-to-end active learning pipelines in PyTorch that reached 90% of baseline accuracy \
+                  using 5% of the original training data through uncertainty-based sampling. Enhanced \
+                  feature-space sampling by replacing PCA+clustering with ResNet-18 embeddings for 2.5x greater \
+                  accuracy improvement over the random baseline. Implemented custom training loops, data loaders, \
+                  and automated retraining cycles.",
+    stack: ["PyTorch", "Python", "ResNet"],
+    githubLink: "https://github.com/yourproject"
+  },
+  {
+    date: "Jan 2025 - Apr 2025",
     title: "Machine Vision Engineer Intern | Zebra Technologies",
-    description: "Developed C++ and C# applications for automated quality inspection, \
-                  OCR, and object classification. Trained and deployed CNN models on IoT hardware. \
-                  Applied computer vision, 2D and 3D image processing algorithms.",
-    stack: ["C++", "C#", "CNN"],
+    description: "Deployed C++ CNN applications for real-time object sorting, OCR, and anomaly detection on \
+                  IoT hardware. Rewrote the C++ codebase with scheduling and parallel operations for a 6x \
+                  speedup to real-time image processing. Implemented 2D and 3D computer vision algorithms such \
+                  as convolutional edge finding and point cloud merging.",
+    stack: ["C++", "CNN", "OpenCV"],
     githubLink: "https://github.com/yourproject"
   },
   {
@@ -83,10 +110,13 @@ const extraccuriculars = [
     githubLink: "https://github.com/yourproject"
   },
   {
-    date: "June 2024 - Present",
+    date: "June 2024 - May 2025",
     title: "Agentic LLM Pipeline to Solve MDPs | UofT Engineering Dept.",
-    description: "Assisting with developing and testing LLM prompting techniques such as chain-of-thoguht, \
-                  RAG, and self-correction. ",
+    description: "Researched prompting and agentic methods for LLMs to solve dynamic reasoning problems by \
+                  formulating Markov Decision Processes and generating code solutions. Designed a \
+                  chain-of-thought pipeline with LangChain that improved MDP formulation accuracy by 60%, and \
+                  constructed RAG pipelines with LlamaIndex to extract 5000 datapoints from PDF textbooks \
+                  across GPT-4o, DeepSeek-R1, and Llama 3.3-70B.",
     stack: ["LLM", "LangChain", "LlamaIndex", "Python"],
     githubLink: "https://github.com/yourproject"
   },
@@ -153,7 +183,7 @@ export default function Page() {
           <SidePanel />
 
           {/* Right Content */}
-          <main className="w-2/3 pt-12 px-12 py-20">
+          <main className="w-2/3 pt-32 px-12 py-20">
             <section id="about" className="h-[500px] w-full flex px-12">
               <div className="max-w-3xl max-w-4xl">
                 <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
@@ -171,9 +201,9 @@ export default function Page() {
             </section>
 
 
-            <section id="experience" className="h-[1100px] w-full px-12 py-20">
+            <section id="experience" className="h-[1700px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-                Where I've Worked
+                Experience
               </h1>
               <FadeInOnScroll>
               <div className="max-w-6xl mx-auto">
@@ -187,7 +217,7 @@ export default function Page() {
             </section>
 
 
-            <section id="research" className="h-[700px] w-full px-12 py-20" >
+            <section id="research" className="h-[800px] w-full px-12 py-20" >
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Research and Startups I'm Involved in 
               </h1>
@@ -219,7 +249,7 @@ export default function Page() {
             </section>
 
 
-            <section id="projects" className="h-[750px] w-full px-12 py-20">
+            <section id="projects" className="h-[670px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Noteworthy Projects
               </h1>

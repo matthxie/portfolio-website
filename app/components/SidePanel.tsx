@@ -13,7 +13,7 @@ export default function SidePanel() {
 
     return (
         <aside className="w-1/3 sticky top-0 h-screen flex flex-col items-center justify-start pt-12 px-8 bg-white dark:bg-black border-r">
-            <h1 className="text-4xl font-bold mb-4">Matthew Xie</h1>
+            <h1 className="text-4xl pt-20 font-bold mb-4">Matthew Xie</h1>
             {/* <img
                 src={"/media/IMG_2645.png"}
                 className="w-30 h-32 rounded-full mb-6"
