@@ -175,7 +175,7 @@ const publications = [
 export default function Page() {
   return (
       <section>
-        <section className="h-screen w-full flex items-center px-12">
+        <section id="about" className="h-screen w-full flex items-center px-12">
           <div className="max-w-4xl">
             <p className="mb-4">
               {`Hi, I'm`}
