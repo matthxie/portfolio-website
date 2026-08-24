@@ -198,7 +198,7 @@ export default function Page() {
 
           {/* Right Content */}
           <main className="w-2/3 pt-32 px-12 py-20">
-            <section id="experience" className="h-[1700px] w-full px-12 pb-20">
+            <section id="experience" className="min-h-[1700px] w-full px-12 pb-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Experience
               </h1>
@@ -214,7 +214,7 @@ export default function Page() {
             </section>
 
 
-            <section id="research" className="h-[800px] w-full px-12 py-20" >
+            <section id="research" className="min-h-[800px] w-full px-12 py-20" >
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Research and Startups I'm Involved in 
               </h1>
@@ -230,7 +230,7 @@ export default function Page() {
             </section>
 
 
-            <section id="publications" className="h-[700px] w-full px-12 py-20">
+            <section id="publications" className="min-h-[700px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Publications
               </h1>
@@ -246,7 +246,7 @@ export default function Page() {
             </section>
 
 
-            <section id="projects" className="h-[670px] w-full px-12 py-20">
+            <section id="projects" className="min-h-[670px] w-full px-12 py-20">
               <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
                 Noteworthy Projects
               </h1>
