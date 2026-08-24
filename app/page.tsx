@@ -4,6 +4,7 @@ import ExperienceCard from "./components/ExperienceCard";
 import SocialIcons from "./components/SocialIcons";
 import SidePanel from "./components/SidePanel";
 import ProjectCard from "./components/ProjectCard";
+import Footer from "./components/footer";
 
 
 const projects = [
@@ -236,6 +237,7 @@ export default function Page() {
               </FadeInOnScroll>
             </section>
 
+            <Footer />
           </main>
         </div>
     </section>
