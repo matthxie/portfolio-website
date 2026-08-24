@@ -172,11 +172,11 @@ export default function Page() {
               Matthew Xie.
             </h1>
             <p className="mb-4">
-              {`I'm an undergraduate student at the University of Toronto. I'm specializing in Statistics
+              {`I'm an undergraduate student at the University of Toronto specializing in Statistics
               with focus in Machine Learning and minoring in Computer Science.`}
             </p>
 
-            <div className="flex items-center gap-6">
+            <div className="relative z-10 flex items-center gap-6">
               <a 
                 href="/resume.pdf" 
                 target="_blank" 

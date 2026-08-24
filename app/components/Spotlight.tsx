@@ -20,7 +20,7 @@ export default function Spotlight() {
   return (
     <div
       ref={divRef}
-      className="pointer-events-none fixed inset-0 z-50"
+      className="pointer-events-none fixed inset-0 z-0"
       style={{
         backgroundImage: `
           radial-gradient(320px circle at var(--mouse-x, -1000px) var(--mouse-y, -1000px), rgba(59, 130, 246, 0.22), transparent 80%),

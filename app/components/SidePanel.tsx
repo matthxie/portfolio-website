@@ -8,7 +8,7 @@ export default function SidePanel() {
     const activeSection = useActiveSection(sections)
 
     return (
-        <aside className="hidden lg:flex w-64 shrink-0 sticky top-0 h-screen flex-col justify-center gap-12 px-8 border-r border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black">
+        <aside className="hidden lg:flex w-64 shrink-0 sticky top-0 z-20 h-screen flex-col justify-center gap-12 px-8 border-r border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black">
             <div className="w-full">
                 <nav className="flex flex-col gap-4">
                     {sections.map((id) => {

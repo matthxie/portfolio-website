@@ -17,7 +17,7 @@ export default function ProjectCard({
   links,
 }: ProjectCardProps) {
   return (
-    <div className="w-full bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800/80 hover:border-neutral-300 dark:hover:border-neutral-700 hover:bg-neutral-50/50 dark:hover:bg-neutral-800/50 transition-all duration-200 rounded-2xl p-5 shadow-xs hover:shadow-sm">
+    <div className="relative z-10 w-full bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800/80 hover:border-neutral-300 dark:hover:border-neutral-700 hover:bg-neutral-50/50 dark:hover:bg-neutral-800/50 transition-all duration-200 rounded-2xl p-5 shadow-xs hover:shadow-sm">
       <div className="flex flex-col gap-y-2 break-words">
         <div className="flex flex-col gap-y-0.5">
           <h3 className="text-xl font-semibold">{title}</h3>
