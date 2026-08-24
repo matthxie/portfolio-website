@@ -16,26 +16,34 @@ const projects = [
                   to $0.001-0.005. Scores 86% on LongMemEval-S and ships as an MCP server for Claude Code, \
                   with embedding and extraction (BGE-small, GLiNER, YAKE) running fully on-device.",
     stack: ["Python", "PyTorch", "Electron", "SQLite", "MCP"],
-    githubLink: "https://github.com/yourproject",
+    links: [
+      { label: "GitHub", url: "https://github.com/yourproject" },
+    ],
   },
   {
     title: "DQN Tetris Bot",
     description: "Developed a DQN agent to play tetris on a custom-built classic Tetris environment.",
     stack: ["PyTorch", "Python"],
-    githubLink: "https://github.com/yourproject",
+    links: [
+      { label: "GitHub", url: "https://github.com/yourproject" },
+    ],
   },
   {
     title: "AI Customer Service Call Center",
     description: "Used ChatGPT and AWS to automatically handle customer queries. Capable of storing \
                   user information and interaction history to provide a smooth conversational experience.",
     stack: ["AWS", "OpenAI", "Python", "Twilio"],
-    githubLink: "https://github.com/yourproject"
+    links: [
+      { label: "GitHub", url: "https://github.com/yourproject" },
+    ],
   },
   {
     title: "Hyperspectral Satellite Image Denoising",
     description: "Co-developed a novel 3D diffusion model to denoise hyperspectral satellite images.",
     stack: ["Diffusion", "CNN", "Pytorch", "Python"],
-    githubLink: "https://github.com/yourproject"
+    links: [
+      { label: "GitHub", url: "https://github.com/yourproject" },
+    ],
   },
 ];
 
@@ -54,7 +62,6 @@ const experiences = [
                   inference, and a zero-shot auto-labeling pipeline (MediaPipe, YOLO-World, SAM2.1, Kalman \
                   filtering, BoT-SORT) at 95%+ box accuracy and a 7 hour train-to-production cycle.",
     stack: ["AWS", "PyTorch", "Iceberg", "YOLO", "SAM2", "Docker"],
-    githubLink: "https://github.com/yourproject"
   },
   {
     date: "May 2025 - Oct 2025",
@@ -66,7 +73,6 @@ const experiences = [
                   accuracy improvement over the random baseline. Implemented custom training loops, data loaders, \
                   and automated retraining cycles.",
     stack: ["PyTorch", "Python", "ResNet"],
-    githubLink: "https://github.com/yourproject"
   },
   {
     date: "Jan 2025 - Apr 2025",
@@ -77,7 +83,6 @@ const experiences = [
                   speedup to real-time image processing. Implemented 2D and 3D computer vision algorithms such \
                   as convolutional edge finding and point cloud merging.",
     stack: ["C++", "CNN", "OpenCV"],
-    githubLink: "https://github.com/yourproject"
   },
   {
     date: "Jun 2024 - May 2025",
@@ -90,7 +95,6 @@ const experiences = [
                   contributed to evaluation and prompt engineering for an agentic pipeline across GPT-4o, \
                   DeepSeek-R1, and Llama 3.3-70B.",
     stack: ["LLM", "LangChain", "LlamaIndex", "Python"],
-    githubLink: "https://github.com/yourproject"
   },
   {
     date: "May 2024 - Jan 2025",
@@ -106,7 +110,6 @@ const experiences = [
                   hyperparameters and visualize metrics, aiding performance evaluations",
     stack: ["PyTorch", "Python", "Transformers", "LoRA", "QLoRA"
     ],
-    githubLink: "https://github.com/yourproject",
   },
   {
     date: "Jan 2023 - Apr 2023",
@@ -117,7 +120,6 @@ const experiences = [
                   Angular and integrated it with existing CI/CD pipeline. Conducted comprehensive \
                   unit tests on existing codebase using Jasmine and Karma.",
     stack: ["Angular", "TypeScript", "Java"],
-    githubLink: "https://github.com/yourproject"
   },
 ];
 
