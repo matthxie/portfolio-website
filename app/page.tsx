@@ -131,7 +131,6 @@ const publications = [
     company: "ICLR 2025 Workshop",
     description: "OpenReview: https://openreview.net/forum?id=KBMxaCSwpB",
     stack: [],
-    githubLink: ""
   },
   {
     date: "April 2025",
@@ -140,7 +139,6 @@ const publications = [
     company: "ICLR 2025 Workshop",
     description: "OpenReview: https://openreview.net/forum?id=sfTXIiu7Op",
     stack: [],
-    githubLink: ""
   },
   {
     date: "August 2024",
@@ -149,7 +147,6 @@ const publications = [
     company: "38th Annual Small Satellite Conference",
     description: "DOI: 10.48550/arXiv.2406.10724",
     stack: [],
-    githubLink: ""
   },
 ]
 
