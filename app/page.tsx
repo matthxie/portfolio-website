@@ -5,6 +5,7 @@ import SocialIcons from "./components/SocialIcons";
 import SidePanel from "./components/SidePanel";
 import ProjectCard from "./components/ProjectCard";
 import Footer from "./components/footer";
+import ScrollDownIndicator from "./components/ScrollDownIndicator";
 
 
 const projects = [
@@ -163,7 +164,7 @@ const publications = [
 export default function Page() {
   return (
       <section>
-        <section id="about" className="h-screen w-full flex items-center px-12">
+        <section id="about" className="relative h-screen w-full flex items-center px-12">
           <div className="max-w-4xl">
             <p className="mb-4">
               {`Hi, I'm`}
@@ -172,8 +173,9 @@ export default function Page() {
               Matthew Xie.
             </h1>
             <p className="mb-4">
-              {`I'm an undergraduate student at the University of Toronto specializing in Statistics
-              with focus in Machine Learning and minoring in Computer Science.`}
+              {`I'm a full-stack ML Enginner in my final year at the University of Toronto. 
+                Currently, I'm building scalable ML pipelines and models at Uma as a Founding ML Engineer.
+                I'm actively seeking opportunities for 2026.`}
             </p>
 
             <div className="relative z-10 flex items-center gap-6">
@@ -192,6 +194,8 @@ export default function Page() {
               <SocialIcons />
             </div>
           </div>
+
+          <ScrollDownIndicator />
         </section>
 
         <div className="flex min-h-screen">
