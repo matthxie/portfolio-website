@@ -52,7 +52,7 @@ const projects = [
 const experiences = [
   {
     date: "Nov 2025 - Present",
-    title: "Founding Machine Learning Engineer",
+    title: "Machine Learning Engineer",
     company: "Uma",
     description: "Architected an AWS data lake on Apache Iceberg, Athena, and Kinesis Firehose to ingest \
                   and query per-frame CV telemetry across a 19-machine fleet at 5.4M frames/week. Designed \
