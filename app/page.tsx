@@ -249,7 +249,6 @@ export default function Page() {
               </FadeInOnScroll>
             </section>
 
-            <Footer />
           </main>
         </div>
     </section>
