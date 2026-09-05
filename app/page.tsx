@@ -180,7 +180,7 @@ export default function Page() {
 
             <div className="relative z-10 flex items-center gap-6">
               <a 
-                href="/resume.pdf" 
+                href="/public/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors"
