@@ -173,7 +173,7 @@ export default function Page() {
               Matthew Xie.
             </h1>
             <p className="mb-4">
-              {`I'm a full-stack ML Enginner in my final year at the University of Toronto. 
+              {`I'm a full-stack ML Engineer in my final year at the University of Toronto. 
                 Currently, I'm building scalable ML pipelines and models at Uma as a Founding ML Engineer.
                 I'm actively seeking opportunities for 2026.`}
             </p>
