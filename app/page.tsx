@@ -173,14 +173,14 @@ export default function Page() {
               Matthew Xie.
             </h1>
             <p className="mb-4">
-              {`I'm a full-stack ML Engineer in my final year at the University of Toronto. 
+              {`I'm a full-stack ML Engineer recently graduated from the University of Toronto June 2026. 
                 Currently, I'm building scalable ML pipelines and models at Uma as a Founding ML Engineer.
                 I'm actively seeking opportunities for 2026.`}
             </p>
 
             <div className="relative z-10 flex items-center gap-6">
               <a 
-                href="/public/resume.pdf" 
+                href="/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors"

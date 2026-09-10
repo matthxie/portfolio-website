@@ -41,7 +41,7 @@ export default function SidePanel() {
 
             <div className="flex flex-col gap-4">
                 <a 
-                    href="/public/resume.pdf" 
+                    href="/resume.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium border border-neutral-200 dark:border-neutral-800 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors w-full"
