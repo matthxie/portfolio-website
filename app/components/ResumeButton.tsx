@@ -1,6 +1,6 @@
 'use client'
 
-import { track } from '@vercel/analytics'
+import posthog from 'posthog-js'
 
 export default function ResumeButton() {
   return (
@@ -8,7 +8,7 @@ export default function ResumeButton() {
       href="/resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => track('Resume Click', { location: 'hero' })}
+      onClick={() => posthog.capture('resume_viewed', { location: 'hero' })}
       className="group flex items-center gap-2 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors"
     >
       <span>View Resume</span>

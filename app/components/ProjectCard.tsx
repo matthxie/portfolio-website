@@ -1,6 +1,6 @@
 'use client'
 
-import { track } from '@vercel/analytics'
+import posthog from 'posthog-js'
 
 interface ProjectLink {
   label: string;
@@ -37,7 +37,7 @@ export default function ProjectCard({
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => track('Project Link Click', { project: title, label: item.label })}
+                onClick={() => posthog.capture('project_link_clicked', { project: title, label: item.label, url: item.url })}
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline w-fit"
               >
                 <span>{item.label}</span>

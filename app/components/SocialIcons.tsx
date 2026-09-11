@@ -2,7 +2,7 @@
 
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
-import { track } from '@vercel/analytics'
+import posthog from 'posthog-js'
 
 export default function SocialIcons({ className = '' }: { className?: string }) {
   return (
@@ -12,7 +12,7 @@ export default function SocialIcons({ className = '' }: { className?: string }) 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
-        onClick={() => track('GitHub Click')}
+        onClick={() => posthog.capture('social_link_clicked', { platform: 'GitHub' })}
         className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
       >
         <SiGithub size={24} />
@@ -22,7 +22,7 @@ export default function SocialIcons({ className = '' }: { className?: string }) 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
-        onClick={() => track('LinkedIn Click')}
+        onClick={() => posthog.capture('social_link_clicked', { platform: 'LinkedIn' })}
         className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
       >
         <SiLinkedin size={24} />
@@ -30,7 +30,7 @@ export default function SocialIcons({ className = '' }: { className?: string }) 
       <a
         href="mailto:mattx180@gmail.com"
         aria-label="Email"
-        onClick={() => track('Email Click')}
+        onClick={() => posthog.capture('social_link_clicked', { platform: 'Email' })}
         className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
       >
         <MdEmail size={24} />

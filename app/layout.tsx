@@ -8,6 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import Spotlight from './components/Spotlight'
 import { baseUrl } from './sitemap'
+import { PostHogProvider } from './providers'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -54,14 +55,16 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased mx-4 mt-8 lg:mx-auto">
-        <Spotlight />
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          {/* <Navbar /> */}
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+        <PostHogProvider>
+          <Spotlight />
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            {/* <Navbar /> */}
+            {children}
+            <Footer />
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </PostHogProvider>
       </body>
     </html>
   )
