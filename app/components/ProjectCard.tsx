@@ -1,3 +1,7 @@
+'use client'
+
+import { track } from '@vercel/analytics'
+
 interface ProjectLink {
   label: string;
   url: string;
@@ -33,6 +37,7 @@ export default function ProjectCard({
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track('Project Link Click', { project: title, label: item.label })}
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline w-fit"
               >
                 <span>{item.label}</span>

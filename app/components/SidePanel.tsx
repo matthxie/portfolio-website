@@ -2,6 +2,7 @@
 
 import { useActiveSection } from 'app/hooks/ActiveSelection'
 import SocialIcons from './SocialIcons'
+import { track } from '@vercel/analytics'
 
 export default function SidePanel() {
     const sections = ['about', 'experience', 'projects', 'publications']
@@ -44,6 +45,7 @@ export default function SidePanel() {
                     href="/resume.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => track('Resume Click', { location: 'side_panel' })}
                     className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium border border-neutral-200 dark:border-neutral-800 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors w-full"
                 >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

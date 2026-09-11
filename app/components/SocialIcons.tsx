@@ -1,6 +1,8 @@
+'use client'
+
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
-
+import { track } from '@vercel/analytics'
 
 export default function SocialIcons({ className = '' }: { className?: string }) {
   return (
@@ -10,6 +12,7 @@ export default function SocialIcons({ className = '' }: { className?: string }) 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
+        onClick={() => track('GitHub Click')}
         className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
       >
         <SiGithub size={24} />
@@ -19,6 +22,7 @@ export default function SocialIcons({ className = '' }: { className?: string }) 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
+        onClick={() => track('LinkedIn Click')}
         className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
       >
         <SiLinkedin size={24} />
@@ -26,6 +30,7 @@ export default function SocialIcons({ className = '' }: { className?: string }) 
       <a
         href="mailto:mattx180@gmail.com"
         aria-label="Email"
+        onClick={() => track('Email Click')}
         className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
       >
         <MdEmail size={24} />
